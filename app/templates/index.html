@@ -1,0 +1,15 @@
+<!-- index.html -->
+<html>
+<head>
+    <title>Invitación de San Valentín</title>
+</head>
+<body>
+    <h1>¿Quieres ser mi San Valentín?</h1>
+    <img src="{{ url_for('static', filename='corazon.png') }}" alt="Corazón">
+    <form action="/invitacion" method="post">
+        <input type="submit" name="respuesta" value="Sí">
+        <input type="submit" name="respuesta" value="No">
+    </form>
+</body>
+</html>
+
