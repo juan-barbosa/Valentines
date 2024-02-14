@@ -1,0 +1,28 @@
+<!-- index.html -->
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Invitation</title>
+</head>
+<body>
+    <img src="{{ url_for('static', filename='1.gif') }}" id=pregunta-1 alt="Corazón">
+    <div id="Clarification">
+        <h1 id="xd">Would you like to be my Valentine?</h1>
+        <form id="but-cont-q" method="post"> <!-- Eliminamos el atributo 'action' -->
+            <input id="but-yes" type="button" value="Yes">
+            <input id="but-no" type="button" value="No 👀">
+        </form>
+    </div>
+    <div id="mensajeContainer"></div>
+    <div id="respuestaContainer" style="display: none; position: absolute; width: 100%; height: 100%; z-index: 2;">
+        <p id="respuestaTexto" style="text-align: center; margin-top: 200px; font-size: 24px;">I knew it :3</p>
+        <img id="respuestaImagen" src="{{ url_for('static', filename='love-ya.gif') }}" alt="Lo sabía" style="display: block; margin: 0 auto;">
+    </div>
+    
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+</html>
+

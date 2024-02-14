@@ -1,0 +1,21 @@
+<!-- index.html -->
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>Important question!</title>
+</head>
+<body>
+    <h1>Clarification! 👀</h1>
+    <div id="Clarification">
+        <h2>This is not THE question, and I'm not sure how good is it to jump to this without having done the question, but I thought it would be nice ;))</h2>
+        <h3>Be careful, you don't wanna click the wrong button, right??? :3</h3>
+        <form id="but-cont" action="{{ url_for('question') }}" method="get">
+            <button type="submit" id="but-next">Continue</button>
+        </form>
+    </div>
+    
+    <img src="{{ url_for('static', filename='not-the.gif') }}" id=entrada alt="Corazón">
+    
+</body>
+</html>
+
